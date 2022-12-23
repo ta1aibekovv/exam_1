@@ -1,0 +1,547 @@
+@font-face 
+    font-family: montserrat
+    src: url("../fonts/montserrat-bold.ttf")
+    font-weight: 700
+@font-face 
+    font-family: montserrat
+    src: url("../fonts/montserrat-semibold.ttf")
+    font-weight: 600
+@font-face 
+    font-family: montserrat
+    src: url("../fonts/montserrat-medium.ttf")
+    font-weight: 500
+@font-face 
+    font-family: montserrat
+    src: url("../fonts/montserrat-regular.ttf")
+    font-weight: 400
+*
+    margin: 0
+    padding: 0
+    text-decoration: none
+body
+    font-family: montserrat
+    box-sizing: border-box
+.container
+    padding: 0px 55px
+
+// nav
+
+.logo h4
+    font-size: 22px
+    font-weight: 500
+    
+nav
+    height: 54px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.nav
+    display: flex
+    align-items: center
+    gap: 45px
+    margin-top: 20px
+
+.btn_option
+    height: 52px
+    width: 164px
+    border-radius: 70px
+    border: 1px solid #0075FF
+    background-color: #fff
+
+.nav_inner
+    font-size: 16px
+    font-weight: 400
+    color: #000
+
+
+// list
+#ul_toggle
+    display: none
+li
+    list-style: none
+.list
+    position: relative
+ul
+    display: none
+
+.ul-line img
+    padding: 8px 5px 2px 5px
+#ul_toggle:checked ~ ul
+    display: block
+ul
+    padding: 0
+    position: absolute
+    top: 52px
+    left: -15px
+    width: 200px
+    height: 260px
+    background-color: #363636
+    border: 1px solid #000000
+    border-radius: 10px
+    
+    
+.li_item
+    margin-top: 20px
+    text-align: center
+    color: #fff
+    cursor: pointer
+
+
+// menu
+.menu
+    display: flex
+    gap: 30px
+#checkbox_toggle
+    display: none
+.hamburger
+    display: none
+.hamburger-line
+    background-color: #000
+    display: block
+    width: 24px
+    height: 2px
+    position: relative
+.hamburger-line:before
+    background-color: #000
+    content: ''
+    display: block
+    position: absolute
+    top: 8px
+    transition: all 0.3s
+    width: 100%
+    height: 100%
+.hamburger-line:after
+    background-color: #000
+    content: ''
+    display: block
+    position: absolute
+    bottom: 8px
+    transition: all 0.3s
+    width: 100%
+    height: 100%
+
+// header
+.header_text
+    margin-top: 90px
+.header_text h1
+    font-size: 60px
+    font-weight: 700
+    line-height: 68px
+    width: 450px
+.header_text p
+    font-size: 18px
+    font-weight: 400
+    line-height: 26px
+    width: 425px
+    margin-top: 30px
+
+.header_btn
+    width: 430px
+    height: 80px
+    margin-top: 45px
+    display: flex
+    align-items: center
+.header_btn button
+    height: 65px
+    width: 209px
+    border: none
+    border-radius: 70px
+    background-color: #0075FF
+
+    font-size: 16px
+    font-weight: 600
+    color: #fff
+.header_btn_p
+    font-size: 13px
+    margin-left: 20px
+
+.pattern
+    position: absolute
+    right: 0px
+    top: 50px
+    z-index: -3
+    // width: 100%
+.header_study
+    position: absolute
+    right: 0px
+    top: 50px
+    z-index: -2
+    // width: 100%
+.header_study_900
+    display: none
+// cards
+.cards
+    width: 100%
+    height: auto
+    border: 1px solid #DCDCDC
+    border-radius: 37px
+    background-color: #fff
+    margin-top: 120px
+.card_pad
+    padding: 35px 45px
+.card_pad h3
+    font-size: 28px
+    font-weight: 600
+    line-height: 68px
+.cards_blox
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 203px 203px 203px
+    gap: 30px
+    margin-top: 34px
+    
+.cards_item
+    background-color: #00000008
+    border-radius: 18px
+    position: relative
+
+.lesson
+    width: 103px
+    height: 31px
+    background-color: #43C59E30
+    color: #43C59E
+    font-size: 14px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 25px
+    margin-left: 30px
+    border-radius: 11px 11px 11px 0px
+
+.name_cours
+    font-size: 18px
+    font-weight: 500
+    margin-left: 30px
+    margin-top: 11px
+.card_img_inner
+    position: absolute
+    right: 30px
+    top: 10px
+
+
+// school
+.school
+    margin-top: 100px
+.school h3
+    font-size: 28px
+    font-weight: 600
+.schools
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr
+    gap: 25px
+    max-width: 100%
+    height: 372px
+    margin-top: 30px
+
+.school_item
+    border-radius: 13px
+    border: 1px solid #DEDEDE
+    display: flex
+    justify-content: center
+    align-items: center
+
+// courses
+.courses
+    margin-top: 107px
+.course_title
+    display: flex
+    justify-content: space-between
+    margin-bottom: 35px
+.course_title h3
+    font-size: 28px
+    font-weight: 600
+.course_title p
+    font-size: 16px
+    font-weight: 500
+    
+.courses_blox
+    display: grid
+    width: 100%
+    height: 538px
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr
+    gap: 19px
+.courses-item
+    border: 1px solid #DCDCDC
+    border-radius: 19px
+.courses-item img
+    width: 100%
+
+
+.courses_img
+    position: relative
+.btn_programmer
+    font-size: 12px
+    font-weight: 500
+    height: 29px
+    width: 144px
+    border-radius: 24px
+    border: none
+    background-color: #fff
+
+    position: absolute
+    top: 21px
+    left: 21px
+
+
+    
+.btn_python
+    height: 29px
+    width: 71px
+    border-radius: 24px
+    border: none
+    font-size: 12px
+    font-weight: 500
+    background-color: #fff
+
+    position: absolute
+    top: 21px
+    left: 180px
+.btn_skillbox
+    height: 29px
+    width: 71px
+    border-radius: 24px
+    border: none
+    font-size: 12px
+    font-weight: 500
+    background-color: #fff
+
+    position: absolute
+    top: 21px
+    left: 265px
+
+.courses_text
+    padding: 17px 27px
+.courses_title
+    display: flex
+    justify-content: space-between
+.courses_title h2
+    font-size: 16px
+    font-weight: 600
+
+.courses_title div img
+    width: 15px
+    height: 15px
+
+.courses_title div
+    display: flex
+    align-items: center
+    gap: 12px
+.courses_title div p
+    font-size: 14px
+    font-weight: 500
+.courses_title div p span
+    color: #00000059
+
+// opisanie
+.w_500
+    font-weight: 500
+    font-size: 12px
+    margin-top: 10px
+    line-height: 18px
+.w_400
+    font-weight: 400
+    font-size: 12px
+
+.price
+    margin-top: 20px
+    display: flex
+    justify-content: space-between
+.l_price
+    display: flex
+    gap: 10px
+    justify-content: space-between
+.l_price img
+    width: 24px
+.l_price p
+    font-size: 16px
+    font-weight: 600
+.r_price p
+    font-weight: 400
+    font-size: 15px
+
+
+.cours_btn
+    width: 100%
+    height: 62px
+    background-color: #0075FF
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 0px 0px 14px 14px
+
+    color: #fff
+    font-weight: 500
+    font-size: 16px
+
+// e_mail
+.e_mail
+    width: 100%
+    height: 371px
+    border: 1px solid #DCDCDC
+    border-radius: 31px
+    margin-top: 96px
+    display: flex
+    justify-content: space-between
+    position: relative
+
+.news
+    width: 254px
+    height: 39px
+    background-color: #43C59E30
+    color: #43C59E
+    font-weight: 600
+    font-size: 15px
+    letter-spacing: 1.5px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 11px 11px 11px 0px
+    margin-top: 46px
+    margin-left: 46px
+
+.email_title
+    height: 89px
+    width: 411px
+    margin-left: 46px
+    margin-top: 11px
+.email_title h1
+    font-size: 28px
+    font-weight: 600
+    line-height: 45px
+.email_img
+    position: absolute
+    right: 0
+    z-index: -3
+
+#e_mail
+    height: 62px
+    width: 230px
+    border-radius: 14px
+    background-color: #F7F7F7
+    border: none
+    padding-left: 26px
+    margin-left: 46px
+    margin-top: 71px
+
+    font-size: 16px
+    font-weight: 400
+    color: #0000006B
+.subscribe
+    height: 62px
+    width: 180px
+    border-radius: 14px
+    border: none
+    background-color: #0075FF
+
+    font-size: 16px
+    font-weight: 600
+    color: #fff
+    margin-top: 71px
+    
+
+.input_e
+    display: flex
+
+// blog
+
+.blog
+    margin-top: 108px
+.blog_title
+    display: flex
+    justify-content: space-between
+.blog div h1
+    font-size: 28px
+    font-weight: 600
+.blog div a
+    font-size: 16px
+    font-weight: 500
+    color: #0075FF
+
+
+.blog_grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-rows: 415px
+    gap: 25px
+    margin-bottom: 108px
+.blog_grids
+    border-radius: 20px
+    border: 1px solid #ECECEC
+    margin-top: 38px
+.blog_grids div img
+    width: 100%
+
+.blog_text 
+    padding: 17px 22px 10px 22px
+    // height: 200px
+.python_dev
+    font-size: 16px
+    font-weight: 600
+    line-height: 21px
+.blog_text p
+    font-size: 14px
+    font-weight: 400
+    line-height: 18px
+    margin-top: 10px
+.blog_text a
+    font-size: 16px
+    font-weight: 500
+    color: #0075FF
+    margin-top: 30px
+
+
+// footer
+
+.logo_footer
+    font-size: 30px
+    font-weight: 600
+footer div
+    display: flex
+    justify-content: space-between
+.socials
+    display: flex
+    gap: 15px
+.social_img
+    width: 36px
+    height: 36px
+
+
+.footer_nav
+    margin-top: 107px
+.oko
+    display: flex
+    gap: 30px
+.oko a
+    font-size: 16px
+    font-weight: 400
+    color: #000
+.footer_icon
+    display: flex
+    gap: 10px
+    
+.footer_icon a
+    font-size: 16px
+    font-weight: 400
+    color: #000
+
+hr
+    width: 100%
+    height: 1px
+    background-color: #D9D9D9
+    margin-top: 33px
+    border: none
+
+
+.footer_text
+    margin-top: 33px
+    margin-bottom: 40px
+.online
+    color: #0000004D
+    font-size: 16px
+    font-weight: 400
+.polit .users
+    font-size: 16px
+    font-weight: 400
